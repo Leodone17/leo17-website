@@ -88,33 +88,7 @@ const texts = [
 "🇧🇩 From Bangladesh"
 ];
 
-let i = 0;
-let j = 0;
-let current = "";
-let isDeleting = false;
 
-function type(){
-  const el = document.getElementById("typing");
-
-  if(!isDeleting){
-    current = texts[i].substring(0, j++);
-    el.innerHTML = current;
-    if(j > texts[i].length){
-      isDeleting = true;
-      setTimeout(type, 1200);
-      return;
-    }
-  }else{
-    current = texts[i].substring(0, j--);
-    el.innerHTML = current;
-    if(j < 0){
-      isDeleting = false;
-      i = (i + 1) % texts.length;
-    }
-  }
-  setTimeout(type, isDeleting ? 50 : 100);
-}
-type();
 </script>script><body>
 
 <header>
