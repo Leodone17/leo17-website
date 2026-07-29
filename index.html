@@ -1,73 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LEO17</title>
+<title>LEO17 | Portfolio</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{
 font-family:Arial,sans-serif;
-background:linear-gradient(135deg,#00b4db,#002b5b);
-color:white;
+background:linear-gradient(135deg,#0f172a,#1e3a8a,#38bdf8);
+color:#fff;
 text-align:center;
 }
-
 header{
-padding:60px 20px;
+padding:70px 20px;
 }
-
-img{
+.profile{
 width:180px;
 height:180px;
 border-radius:50%;
 object-fit:cover;
-border:5px solid white;
-box-shadow:0 0 30px #00e5ff;
-animation:float 3s infinite ease-in-out;
+border:5px solid #fff;
+box-shadow:0 0 25px #38bdf8;
+animation:float 3s ease-in-out infinite;
 }
-
 @keyframes float{
-0%,100%{transform:translateY(0);}
 50%{transform:translateY(-10px);}
 }
-
 h1{
-font-size:50px;
+font-size:48px;
 margin:20px 0 10px;
 }
-
-p{
-font-size:20px;
+.tag{
+font-size:22px;
+color:#cbd5e1;
+margin-bottom:25px;
 }
-
 .btn{
 display:inline-block;
-margin:10px;
-padding:14px 30px;
-background:#00c3ff;
-color:white;
-text-decoration:none;
+margin:8px;
+padding:14px 28px;
 border-radius:30px;
+background:#38bdf8;
+color:#fff;
+text-decoration:none;
+font-weight:bold;
 transition:.3s;
 }
-
 .btn:hover{
-background:#008cff;
+background:#0ea5e9;
 transform:scale(1.05);
 }
-
 section{
-padding:50px 20px;
-max-width:800px;
+padding:60px 20px;
+max-width:900px;
 margin:auto;
 }
-
+.card{
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(10px);
+padding:25px;
+border-radius:20px;
+margin:20px;
+}
 footer{
-padding:20px;
-background:#001a33;
+padding:25px;
+background:#0f172a;
 margin-top:40px;
 }
 </style>
@@ -77,48 +78,48 @@ margin-top:40px;
 
 <header>
 
-<img src="profile.jpg" alt="LEO17">
+<img src="profile.jpg" class="profile">
 
 <h1>LEO17</h1>
 
-<p>Dream • Explore • Inspire</p>
-
-<br>
+<p class="tag">📸 Photographer • 🎮 Gamer • 💻 Web Learner</p>
 
 <a class="btn" href="https://www.facebook.com/">Facebook</a>
 
-<a class="btn" href="https://www.instagram.com/leo17.143">Instagram</a>
+<a class="btn" href="https://www.instagram.com/">Instagram</a>
 
-<a class="btn" href="https://youtube.com/@ukyanuleo">YouTube</a>
+<a class="btn" href="https://www.youtube.com/@ukyanuleo">YouTube</a>
 
 </header>
 
 <section>
 
-<h2>About Me</h2>
-
+<div class="card">
+<h2>👋 About Me</h2>
 <br>
-
 <p>
-Hi! I'm <b>LEO17</b> from Bangladesh.
+Hi, I'm <b>LEO17</b> from Bangladesh.<br><br>
 I love photography, gaming, nature and learning web development.
 </p>
+</div>
 
-</section>
-
-<section>
-
-<h2>Contact</h2>
-
+<div class="card">
+<h2>💡 Skills</h2>
 <br>
+HTML • CSS • GitHub Pages • Photography • Gaming
+</div>
 
-<p>Email: ukyanuleo@gmail.com</p>
+<div class="card">
+<h2>📞 Contact</h2>
+<br>
+Email: ukyanuleo@gmail.com
+</div>
 
 </section>
 
 <footer>
 
-© 2026 LEO17. All Rights Reserved.
+© 2026 LEO17 • Dream • Explore • Inspire
 
 </footer>
 
